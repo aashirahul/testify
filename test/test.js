@@ -26,6 +26,11 @@ describe('Fizzbuzz returns values for different kinds of numbers', function () {
   	assert.equal(result,'buzz');
  
   });
+  it('should return fizzbuzz for number divisible by 3&5',function(){
+  	let result = fizz(15);
+  	assert.equal(result,'fizzbuzz');
+ 
+  });
 
  });
 
