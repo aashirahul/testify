@@ -17,6 +17,13 @@ return num;
 function fizzBuzz (start, end) {
   // Write fizzBuzz here once fizz is finished.
   // loop, fizz. console
+  var number;
+for(number=start;number<=end; number++){
+	var result =fizz(number);
+	console.log(result);
+
+}
+
 };
 
 export { fizz };
