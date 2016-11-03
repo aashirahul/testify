@@ -1,5 +1,9 @@
 function fizz (number) {
+if(number%3==0){
+	var num = 'fizz';
+} else {
 var num = number;
+}
 return num;
   // TODO
 
