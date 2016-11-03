@@ -11,7 +11,7 @@ class GildedRose {
         if (this.name != 'Sulfuras, Hand of Ragnaros') {
           this.quality = this.quality - 1;
           if(this.name=='Conjured Mana Cake'){
-            this.quality= this.quality-2;
+            this.quality= this.quality-1;
           }
 
         }
@@ -28,9 +28,9 @@ class GildedRose {
           }
           if (this.sellIn < 6) {
             if (this.quality < 50) {
-              
+              //if(this.name!='Conjured Mana Cake'){
               this.quality = this.quality + 1;
-            
+            //}
           }
         }
       }
@@ -39,9 +39,6 @@ class GildedRose {
 }
     if (this.name != 'Sulfuras, Hand of Ragnaros') {
       this.sellIn = this.sellIn - 1;
-      if(this.name=='Conjured Mana Cake'){
-        this.quality = this.quality-2;
-      }
     }
     if (this.sellIn < 0) {
       if (this.name != 'Aged Brie') {
@@ -49,9 +46,9 @@ class GildedRose {
           if (this.quality > 0) {
             if (this.name != 'Sulfuras, Hand of Ragnaros') {
               this.quality = this.quality - 1;
-              // if(this.name=='Conjured Mana Cake'){
-                //this.quality= this.quality-2;
-              //}
+               if(this.name=='Conjured Mana Cake'){
+                this.quality= this.quality-1;
+              }
             }
           }
         } else {
@@ -60,10 +57,7 @@ class GildedRose {
       } else {
         if (this.quality < 50) {
           this.quality = this.quality + 1;
-         // if(this.name=='Conjured Mana Cake'){
-            //this.quality= this.quality-2;
-          //}
-      
+        
       }
     }
   }
