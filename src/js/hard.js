@@ -51,8 +51,7 @@ class GildedRose {
                   this.quality=this.quality-1;
                 }
               }
-
-  }
+            }
 
   qualityDecreasesWithTime(){
     if(this.name != 'Aged Brie' && this.name != 'Backstage passes to a TAFKAL80ETC concert'){
